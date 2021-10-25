@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fruit App</string>
+    <string name="family_label">Family :</string>
+    <string name="genus_label">Genus :</string>
+    <string name="nutritions_label">Nutritions :</string>
+    <string name="carbohydrate_label">Carbohydrate :</string>
+    <string name="protein_label">Protein :</string>
+    <string name="sugar_label">Sugar :</string>
+    <string name="fat_label">Fat :</string>
+    <string name="calories_label">Calories :</string>
+    <string name="fruit_name_label">Fruit name :</string>
+    <string name="add_fruit">Add fruit</string>
+</resources>

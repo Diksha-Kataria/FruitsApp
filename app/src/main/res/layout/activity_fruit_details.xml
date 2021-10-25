@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FruitDetails"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvLabelFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/family_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvFamilyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toEndOf="@id/tvLabelFamily"/>
+
+    <TextView
+        android:id="@+id/tvLabelGenus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genus_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvFamilyName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="16dp"/>
+
+    <TextView
+        android:id="@+id/tvGenusName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/tvLabelGenus"
+        app:layout_constraintStart_toStartOf="@id/tvFamilyName"
+        android:layout_marginHorizontal="16dp" />
+
+    <TextView
+        android:id="@+id/tvLabelNutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nutritions_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelGenus"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="16dp"/>
+
+    <TextView
+        android:id="@+id/tvCarbohydrateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carbohydrate_label"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelNutrition"
+        android:layout_marginVertical="4dp"/>
+
+    <TextView
+        android:id="@+id/tvCarbohydrateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintStart_toEndOf="@id/tvCarbohydrateLabel"
+        app:layout_constraintTop_toTopOf="@id/tvCarbohydrateLabel"/>
+
+    <TextView
+        android:id="@+id/tvProteinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/protein_label"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCarbohydrateLabel"
+        android:layout_marginVertical="4dp"/>
+
+    <TextView
+        android:id="@+id/tvProteinValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintStart_toEndOf="@id/tvProteinLabel"
+        app:layout_constraintTop_toTopOf="@id/tvProteinLabel"/>
+
+    <TextView
+        android:id="@+id/tvSugarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sugar_label"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProteinLabel"
+        android:layout_marginVertical="4dp"/>
+
+    <TextView
+        android:id="@+id/tvSugarValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintStart_toEndOf="@id/tvSugarLabel"
+        app:layout_constraintTop_toTopOf="@id/tvSugarLabel"/>
+
+    <TextView
+        android:id="@+id/tvFatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fat_label"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSugarLabel"
+        android:layout_marginVertical="4dp"/>
+
+    <TextView
+        android:id="@+id/tvFatValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintStart_toEndOf="@id/tvFatLabel"
+        app:layout_constraintTop_toTopOf="@id/tvFatLabel"/>
+
+    <TextView
+        android:id="@+id/tvCaloriesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calories_label"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFatLabel"
+        android:layout_marginVertical="4dp"/>
+
+    <TextView
+        android:id="@+id/tvCaloriesValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintStart_toEndOf="@id/tvCaloriesLabel"
+        app:layout_constraintTop_toTopOf="@id/tvCaloriesLabel"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

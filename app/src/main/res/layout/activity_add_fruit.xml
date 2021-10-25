@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFruit"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tvFruitName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fruit_name_label"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        app:backgroundTint="@color/colorPrimary"
+        android:id="@+id/etFruitName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toEndOf="@id/tvFruitName"/>
+
+    <TextView
+        android:id="@+id/tvLabelFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/family_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etFruitName"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        app:backgroundTint="@color/colorPrimary"
+        android:id="@+id/etFamilyName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etFruitName"
+        app:layout_constraintStart_toStartOf="@id/etFruitName"/>
+
+    <TextView
+        android:id="@+id/tvLabelGenus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genus_label"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/etFamilyName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        app:backgroundTint="@color/colorPrimary"
+        android:id="@+id/etGenusName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvLabelGenus"
+        app:layout_constraintStart_toStartOf="@id/etFruitName" />
+
+    <TextView
+        android:id="@+id/tvLabelNutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nutritions_label"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelGenus"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="16dp"/>
+
+    <TextView
+        android:id="@+id/tvCarbohydrateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/carbohydrate_label"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelNutrition"
+        android:layout_marginVertical="4dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        app:backgroundTint="@color/colorPrimary"
+        android:id="@+id/etCarbohydrateValue"
+        android:layout_width="72dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintStart_toEndOf="@id/tvCarbohydrateLabel"
+        app:layout_constraintTop_toTopOf="@id/tvCarbohydrateLabel"/>
+
+    <TextView
+        android:id="@+id/tvProteinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/protein_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCarbohydrateValue"
+        android:layout_marginVertical="4dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        app:backgroundTint="@color/colorPrimary"
+        android:id="@+id/etProteinValue"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@id/etCarbohydrateValue"
+        app:layout_constraintTop_toTopOf="@id/tvProteinLabel"/>
+
+    <TextView
+        android:id="@+id/tvSugarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sugar_label"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etProteinValue"
+        android:layout_marginVertical="4dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        app:backgroundTint="@color/colorPrimary"
+        android:id="@+id/etSugarValue"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@id/etCarbohydrateValue"
+        app:layout_constraintTop_toTopOf="@id/tvSugarLabel"/>
+
+    <TextView
+        android:id="@+id/tvFatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fat_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSugarValue"
+        android:layout_marginVertical="4dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        app:backgroundTint="@color/colorPrimary"
+        android:id="@+id/etFatValue"
+        android:layout_width="72dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/etCarbohydrateValue"
+        app:layout_constraintTop_toTopOf="@id/tvFatLabel"/>
+
+    <TextView
+        android:id="@+id/tvCaloriesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calories_label"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etFatValue"
+        android:layout_marginVertical="4dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        app:backgroundTint="@color/colorPrimary"
+        android:id="@+id/etCaloriesValue"
+        android:layout_width="72dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/etCarbohydrateValue"
+        app:layout_constraintTop_toTopOf="@id/tvCaloriesLabel"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bAddFruit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_fruit"
+        android:textSize="18sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
